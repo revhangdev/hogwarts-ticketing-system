@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квідич - Реєстрація акаунта </title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header>
+            <div class="wrap-header">
+                <div class="header-logo">
+                    <img src="../static/images/logo.svg" alt="">
+                </div>
+                <div class="header-menu">
+                    <span class="btn"><a href="{{ url_for('register') }}">Зареєструватися</a></span>
+                    <span><a href="{{ url_for('login') }}">Увійти</a></span>
+                    <span><a href="{{ url_for('about') }}">Про нас</a></span>
+                </div>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <section class="form">
+            <div class="form-login">
+                <form method="POST">
+                    <h2>Реєстрація користувача</h2>
+                    <div class="wrapper-input">
+                            <input type="name" name="name" placeholder="Ім'я" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="password" name="password" placeholder="Придумайте пароль" required>
+                            <button name="buttons_" value="reg" id="reg" class="btn">Зареєструватися</button>
+                    </div>
+                </form>
+                <p>Якщо у вас є акаунт - <a href="{{ url_for('login') }}">авторизуйтеся</a>.</p>
+            </div>
+            <div class="block-info">
+                <img src="../static/images/img-info.jpeg" alt="">
+                <p>
+                    Якщо у вас виникли запитання або пропозиції - зв'яжіться з розробником - <a
+                        href="">????????</a>.
+                </p>
+                <p>Тут також може бути ваша реклама!</p>
+            </div>
+        </section>
+        <footer>
+            <div class="wrap-footer">
+                <p>© 2023</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="menu-mobile">
+        <div class="wrap-mobile">
+            <div class="close">
+               <span>&#10006;</span>
+            </div>
+            <div class="content-menu">
+                <span class="btn"><a href="{{ url_for('register') }}">Зареєструватися</a></span>
+                <span><a href="{{ url_for('login') }}">Увійти</a></span>
+                <span><a href="{{ url_for('about') }}">Про нас</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="../static/script/index.js"></script>
+</body>
+
+</html>

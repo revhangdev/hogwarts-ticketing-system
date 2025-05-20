@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+    max-width: 100%;
+    box-sizing:border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrap-header{
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+footer{
+    background-color: #2F3235;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.wrap-footer{
+    width: 95%;
+    margin:auto;
+    font-weight: 600;
+    color:#Fff;
+    text-align: right;
+}
+.header-menu span a{
+    color:#333;
+}
+.header-menu span+span{
+    margin-left: 35px;
+}
+
+.header-menu span.btn{
+    background-color:rgb(23, 76, 136);
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+.burger{
+    height: 50px;
+    width: 50px;
+    border-radius:6px;
+    background-color:rgb(23, 76, 136);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.burger div{
+    height: 2px;
+    border-radius: 2px;
+    background-color:#Fff;
+    width: 30px;
+}
+.burger div+div{
+    margin-top: 7px;
+}
+.header-menu span.btn a{
+    color:#fff;
+}
+
+.form{
+    max-width: 1800px;
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 60% 35%;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-login{
+    background-color:#333;
+    color:#fff;
+    padding:40px;
+    border-radius:6px;
+}
+.form-login a{
+    color:#Fff;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form h2{
+    margin-bottom: 50px;
+}
+form textarea{
+    background-color:transparent;
+    border:1px solid #fff;
+    border-radius: 3px;
+    padding: 10px;
+    color:#fff;
+    margin-top: 20px;
+    color:#fff;
+}
+form input{
+    background-color:transparent;
+    border:1px solid #fff;
+    border-radius: 3px;
+    height: 45px;
+    padding: 0px 10px;
+    color:#fff;
+}
+form input:focus{
+    outline: 1px solid #fff;
+}
+form input+input{
+    margin-top: 20px;
+}
+form input::placeholder{
+    color:#fff;
+}
+form textarea::placeholder{
+    color:#fff;
+}
+form button{
+    height: 45px;
+    background-color:#fff;
+    color:#333;
+    border-radius: 4px;
+    border:none;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.block-info{
+    background-color:rgb(31, 31, 31);
+    color:#Fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+    border-radius:6px;
+    align-items: center;
+}
+.block-info a{
+    color:silver;
+}
+.block-info img{
+    border-radius:6px;
+}
+.block-info p{
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+.menu-mobile{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgb(23, 76, 136);
+    display: none;
+}
+.wrap-mobile a{
+    color:#Fff;
+}
+.wrap-mobile{
+    width: 90%;
+    margin: 20px auto;
+}
+.wrap-mobile .close{
+    display: flex;
+    justify-content: flex-end;
+}
+.wrap-mobile .close span{
+    background-color:#fff;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:6px;
+}
+.content-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.content-menu span+span{
+    margin-top: 20px;
+}
+
+.wrapper-input{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    grid-row-gap: 20px;
+}
+
+.wrapper-input input+input{
+    margin-top: 0px;
+}
+.hello{
+    font-weight: 600;
+}
+.admin{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+}
+.wrapper-application{
+    width: 90%;
+    margin: 30px auto;
+}
+.application{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color:#eee;
+    padding: 20px 40px;
+    border-radius:6px;
+}
+.application .description{
+    grid-column: span 2;
+}
+.application+.application{
+    margin-top: 30px;
+}
+.btn-buy{
+    background-color:orange;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    color:#ffff;
+    border-radius: 5px;
+}
+.btn-delete{
+    background-color:tomato;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    color:#ffff;
+    border-radius: 5px;
+}
+.btn-buy:hover{
+    background-color:rgb(211, 143, 17);
+    transition: .2s;
+}
+.about-us{
+    height: 100%;
+    width: 100%;
+    padding: 30px 0;
+    background: #ddd;
+  }
+  .about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .text{
+    width: 940px;
+  }
+  .text h2{
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  span{
+    color: #4070f4;
+  }
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+  }
+  .hire{
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .hire:hover{
+    background: #000;
+    border: 1px solid #4070f4;
+  }
+@media(max-width:1000px){
+    .form{
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+    }
+    .block-info img{
+        width: auto;
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 720px){
+    .form-login{
+        padding: 20px;
+    }
+    .wrapper-input{
+        grid-template-columns: 100%;
+    }
+    .burger{
+        display: flex;
+    }
+    .header-menu{
+        display: none;
+    }
+    .admin{
+        grid-template-columns: 100%;
+    }
+    .application .description{
+        grid-column: span 1;
+    }
+    .application{
+        grid-template-columns: 100%;
+    }
+}

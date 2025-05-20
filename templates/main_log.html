@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квідич - Про нас </title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header>
+            <div class="wrap-header">
+                <div class="header-logo">
+                    <img src="../static/images/logo.svg" alt="">
+                </div>
+                <div class="header-menu">
+                    <span class="hello">Вітаємо на нашому сайті, {{ value }}</span>
+                    <span ><a href="{{ url_for('user') }}">Акаунт</a></span>
+                    <span><a href="{{ url_for('history') }}">Історія бронювань</a></span>
+                    <span class="btn"><a href="{{ url_for('about_log') }}">Про нас</a></span>
+                    <span><a href="{{ url_for('login') }}">Вийти</a></span>
+                </div>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <section class="about-us">
+            <div class="about">
+              <div class="text">
+                <h2>Квідич</h2>
+                <p>Квідич — чарівний вид спорту, який грають на мітлах . 
+                    Це найпопулярніша гра серед чарівників і відьом і, за словами Рубеуса Геґріда ,
+                    еквівалентна пристрасті маґлів до футболу. 
+                    <br> <br> У грі беруть участь дві команди з семи осіб (три переслідувачі 
+                    , два бітери , один кіпер і один шукач ) і включає чотири м’ячі ( квафел , два бладжери та золотий снитч ). 
+                    <br> <br> Хранитель охороняє стійки воріт , а троє переслідувачів забивають голи за допомогою квафела, кидаючи його в одну
+                     з трьох стійок воріт команди суперника. Двоє Бітерів тримають бладжери подалі від своєї команди та б’ють бладжерами 
+                     в бік команди суперника, а шукач ловить золотий снитч , щоб завершити гру. Команда, чий Шукач зловить снитч, отримує 150 очок, 
+                     але це не обов’язково означає, що вона виграє, якщо в іншої команди буде більше очок після того, як снітч буде спіймано. 
+                     <br> <br>Мета гри — набрати більше очок,
+                      ніж ваші суперники. Кожен гол коштує десять балів, а спіймання снича – сто п’ятдесят балів. 
+                      Гра закінчується, коли снитч спіймано або між капітанами обох команд досягнуто домовленості.
+                       Деякі ігри можуть тривати багато днів, якщо снитч не спійманий (рекорд, згідно з « Квідич крізь віки» , 
+                       становить три місяці).
+                       <br> <br> Комітет з квідичу Міжнародної конфедерації чарівників є міжнародним органом, який наглядає за грою у квідич.
+                        Існує також Міжнародна асоціація квідичу та Міжнародна федерація асоціації квідичу (FIQA), які кожні чотири роки організовують Кубок світу з квідичу . 
+                    У Великобританії квідич регулюється Департаментом магічних ігор і спорту , де розташовані штаб-квартири Британської та Ірландської квідичної ліги .</p>
+                <div class="data">
+                <a href="{{ url_for('user') }}" class="hire">Купити квиток</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        <footer>
+            <div class="wrap-footer">
+                <p>© 2023</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="menu-mobile">
+        <div class="wrap-mobile">
+            <div class="close">
+               <span>&#10006;</span>
+            </div>
+            <div class="content-menu">
+                <span class="hello">Вітаємо на нашому сайті,{{ value }}</span>
+                <span ><a href="{{ url_for('user') }}">Акаунт</a></span>
+                <span><a href="{{ url_for('history') }}">Історія бронювань</a></span>
+                <span class="btn"><a href="{{ url_for('about') }}">Про нас</a></span>
+                <span><a href="{{ url_for('login') }}">Вийти</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="../static/script/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квідич - Адмін панель </title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header>
+            <div class="wrap-header">
+                <div class="header-logo">
+                    <img src="../static/images/logo.svg" alt="">
+                </div>
+                <div class="header-menu">
+                    <span><a href="{{ url_for('admin') }}">Адмін панель</a></span>
+                    <span class="btn"><a href="{{ url_for('admin_games') }}">Ігри</a></span>
+                    <span><a href="{{ url_for('login') }}">Вийти</a></span>
+                </div>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <form method="POST">
+        <section id="wrapper-application">
+            {% for row in rows %}
+
+
+            <div class="application">
+
+                <div>
+                    <p><b>Місце проведення: </b> {{ row[0] }}</p>
+                </div>
+                <div>
+                    <p><b>Кількість місць: </b> {{ row[1] }}</p>
+                </div>
+                <div>
+                    <p><b>Дата провдення: </b> {{ row[2] }}</p>
+                </div>
+                <div>
+                    <p><b>Ціна квитка: </b> {{ row[5] }}</p>
+                </div>
+                <div class="description">
+                    <p><b>Опис: </b> {{ row[7] }}</p>
+                </div>
+                <div>
+                    <a class="btn-delete" type="button" href="/delete/{{row[3]}}">Видалити</a>
+                </div>
+
+            </div>
+
+
+            {% endfor %}
+        </section>
+        </form>
+        <footer>
+            <div class="wrap-footer">
+                <p>© 2023</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="menu-mobile">
+        <div class="wrap-mobile">
+            <div class="close">
+                <span>&#10006;</span>
+            </div>
+            <div class="content-menu">
+                <span><a href="{{ url_for('admin') }}">Адмін панель</a></span>
+                <span><a href="{{ url_for('admin_games') }}">Ігри</a></span>
+                <span class="btn"><a href="{{ url_for('login') }}">Вийти</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="../static/script/index.js"></script>
+</body>
+
+</html>
